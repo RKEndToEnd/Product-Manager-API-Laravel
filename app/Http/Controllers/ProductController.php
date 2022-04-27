@@ -33,4 +33,9 @@ class ProductController extends Controller
             return ["result" => "Unexeption error occured."];
         }
     }
+
+    function getProduct($id)
+    {
+        return Product::find($id);
+    }
 }
